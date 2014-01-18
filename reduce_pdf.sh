@@ -12,7 +12,7 @@ if [ "$#" -eq 0 ]; then
   echo " -r	Specifica la risoluzione ( medium / low )"
   exit 0
 fi
-while [[ $# > 1 ]]
+while [[ $# > 0 ]]
 do
 	key="$1"
 	shift
@@ -35,6 +35,11 @@ do
 	    ;;
 	esac
 done
+if [ "$input_file" == "" ]
+then
+	echo "Input: "
+	read input_file
+fi
 if [ "$output_file" == "" ]
 then
 	echo "Output: "
