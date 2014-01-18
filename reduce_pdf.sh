@@ -55,4 +55,4 @@ fi
 echo "Input file : $input_file"
 echo "Output file: $output_file"
 echo "Risoluzione: $resolution"
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dPDFSETTINGS=/$resolution -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$output_file $input_file  
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/$resolution -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$output_file $input_file  
